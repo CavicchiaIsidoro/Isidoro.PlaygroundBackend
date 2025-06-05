@@ -1,10 +1,87 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Host Adapters", "01 - Host Adapters", "{48BCBA8D-98B7-4DB8-A688-ACC315938F75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{E0375C99-134D-4834-BBAB-F0EEE7577322}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - External Adapters", "03 - External Adapters", "{5B26D5D3-38B2-4C1B-AFD1-C7F06D17CE4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Database", "04 - Database", "{963557DC-E42A-4D84-83FF-51916C42BFE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 - Tests", "10 - Tests", "{F70925A3-F13D-4223-95EE-43354EDAC3BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 - Databuilders", "11 - Databuilders", "{A7B113EF-C7D0-4DEA-8FB7-8D131DD57161}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "98 - Helpers", "98 - Helpers", "{891B76AF-D0B6-4900-8F30-1CE0A9BEE8F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 - Misc", "99 - Misc", "{4B431D5B-E536-4DD4-871A-54E896DDF718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isidoro.PlaygroundBackend.Api", "Isidoro.PlaygroundBackend.Api\Isidoro.PlaygroundBackend.Api.csproj", "{1BBA56D2-5463-435C-BAEE-2A140F94FB26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isidoro.PlaygroundBackend.Application", "Isidoro.PlaygroundBackend.Application\Isidoro.PlaygroundBackend.Application.csproj", "{0D85AC25-5B79-469C-9266-6F5A275A6BED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isidoro.PlaygroundBackend.Domain", "Isidoro.PlaygroundBackend.Domain\Isidoro.PlaygroundBackend.Domain.csproj", "{3D325705-99E9-42DB-855D-3056B89D5651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Framework", "05 - Framework", "{5EFBF3A2-6A5D-4E24-902B-FEE01F0869E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isidoro.PlaygroundBackend.Infrastructure", "Isidoro.PlaygroundBackend.Infrastructure\Isidoro.PlaygroundBackend.Infrastructure.csproj", "{C8F3AD34-861F-4539-8A98-AED37F3300EA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Isidoro.PlaygroundBackend.Database", "Isidoro.PlaygroundBackend.Database\Isidoro.PlaygroundBackend.Database.sqlproj", "{16866978-4B67-4A66-AD76-D93E28A58DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isidoro.PlaygroundBackend.Tests", "Isidoro.PlaygroundBackend.Tests\Isidoro.PlaygroundBackend.Tests.csproj", "{46C1F092-5823-4BD3-946D-E68D90FD8400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isidoro.PlaygroundBackend.Databuilder", "Isidoro.PlaygroundBackend.Databuilder\Isidoro.PlaygroundBackend.Databuilder.csproj", "{B54521FD-683E-4961-9429-6E5B6F7A187B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BBA56D2-5463-435C-BAEE-2A140F94FB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBA56D2-5463-435C-BAEE-2A140F94FB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBA56D2-5463-435C-BAEE-2A140F94FB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBA56D2-5463-435C-BAEE-2A140F94FB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D85AC25-5B79-469C-9266-6F5A275A6BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D85AC25-5B79-469C-9266-6F5A275A6BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D85AC25-5B79-469C-9266-6F5A275A6BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D85AC25-5B79-469C-9266-6F5A275A6BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D325705-99E9-42DB-855D-3056B89D5651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D325705-99E9-42DB-855D-3056B89D5651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D325705-99E9-42DB-855D-3056B89D5651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D325705-99E9-42DB-855D-3056B89D5651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F3AD34-861F-4539-8A98-AED37F3300EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F3AD34-861F-4539-8A98-AED37F3300EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F3AD34-861F-4539-8A98-AED37F3300EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F3AD34-861F-4539-8A98-AED37F3300EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16866978-4B67-4A66-AD76-D93E28A58DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16866978-4B67-4A66-AD76-D93E28A58DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16866978-4B67-4A66-AD76-D93E28A58DAE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{16866978-4B67-4A66-AD76-D93E28A58DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16866978-4B67-4A66-AD76-D93E28A58DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16866978-4B67-4A66-AD76-D93E28A58DAE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{46C1F092-5823-4BD3-946D-E68D90FD8400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C1F092-5823-4BD3-946D-E68D90FD8400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C1F092-5823-4BD3-946D-E68D90FD8400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C1F092-5823-4BD3-946D-E68D90FD8400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54521FD-683E-4961-9429-6E5B6F7A187B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54521FD-683E-4961-9429-6E5B6F7A187B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54521FD-683E-4961-9429-6E5B6F7A187B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54521FD-683E-4961-9429-6E5B6F7A187B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BBA56D2-5463-435C-BAEE-2A140F94FB26} = {48BCBA8D-98B7-4DB8-A688-ACC315938F75}
+		{0D85AC25-5B79-469C-9266-6F5A275A6BED} = {E0375C99-134D-4834-BBAB-F0EEE7577322}
+		{3D325705-99E9-42DB-855D-3056B89D5651} = {E0375C99-134D-4834-BBAB-F0EEE7577322}
+		{C8F3AD34-861F-4539-8A98-AED37F3300EA} = {5B26D5D3-38B2-4C1B-AFD1-C7F06D17CE4A}
+		{16866978-4B67-4A66-AD76-D93E28A58DAE} = {963557DC-E42A-4D84-83FF-51916C42BFE7}
+		{46C1F092-5823-4BD3-946D-E68D90FD8400} = {F70925A3-F13D-4223-95EE-43354EDAC3BA}
+		{B54521FD-683E-4961-9429-6E5B6F7A187B} = {A7B113EF-C7D0-4DEA-8FB7-8D131DD57161}
 	EndGlobalSection
 EndGlobal
