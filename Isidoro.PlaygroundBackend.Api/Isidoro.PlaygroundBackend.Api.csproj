@@ -17,8 +17,4 @@
     <ProjectReference Include="..\Isidoro.PlaygroundBackend.Infrastructure\Isidoro.PlaygroundBackend.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

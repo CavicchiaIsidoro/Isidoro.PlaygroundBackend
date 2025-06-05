@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Isidoro.PlaygroundBackend.Domain\Isidoro.PlaygroundBackend.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
