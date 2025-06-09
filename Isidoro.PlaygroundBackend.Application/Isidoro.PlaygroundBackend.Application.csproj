@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Isidoro.PlaygroundBackend.Domain\Isidoro.PlaygroundBackend.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\Mappers\" />
-  </ItemGroup>
-
 </Project>

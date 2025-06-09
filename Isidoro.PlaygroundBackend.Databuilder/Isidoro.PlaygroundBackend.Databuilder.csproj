@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Isidoro.PlaygroundBackend.Domain\Isidoro.PlaygroundBackend.Domain.csproj" />
+    <ProjectReference Include="..\Isidoro.PlaygroundBackend.Infrastructure\Isidoro.PlaygroundBackend.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

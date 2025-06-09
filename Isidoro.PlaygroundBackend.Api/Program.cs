@@ -1,5 +1,7 @@
 using Isidoro.PlaygroundBackend.Api;
+using Isidoro.PlaygroundBackend.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);

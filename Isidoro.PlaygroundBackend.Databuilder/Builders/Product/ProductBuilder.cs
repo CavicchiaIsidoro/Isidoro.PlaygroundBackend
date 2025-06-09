@@ -1,4 +1,6 @@
 ﻿using Isidoro.PlaygroundBackend.Databuilder.Builders.Abstract;
+using Isidoro.PlaygroundBackend.Infrastructure;
+using Isidoro.PlaygroundBackend.Infrastructure.Mappers;
 
 namespace Isidoro.PlaygroundBackend.Databuilder.Builders.Product
 {
@@ -6,15 +8,17 @@ namespace Isidoro.PlaygroundBackend.Databuilder.Builders.Product
     {
         private Domain.Product _entity;
         private bool _didBuild = false;
+        private readonly PlaygroundContext _context;
 
-        public ProductBuilder()
+        public ProductBuilder(PlaygroundContext context)
         {
+            _context = context;
             _entity = new Domain.Product();
         }
 
         public async Task<Domain.Product> Build()
         {
-            var bob = new BuilderProvider();
+            var bob = new BuilderProvider(_context);
 
             if (_entity.Id == Guid.Empty)
             {
@@ -45,6 +49,9 @@ namespace Isidoro.PlaygroundBackend.Databuilder.Builders.Product
         {
             if (!_didBuild)
                 await Build();
+
+            await _context.Products.AddAsync(_entity.ToData());
+            await _context.SaveChangesAsync();
 
             return _entity;
         }

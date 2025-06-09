@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Product]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL,
+	[Name] VARCHAR(50) NOT NULL,
+	[Description] NVARCHAR(125) NULL,
+	[Price] DECIMAL(6,2) NULL,
+	CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED ([Id] ASC)
+)
+GO
+
+CREATE INDEX [IX_Product_Name] ON [Product] ([Name] ASC)
+GO
